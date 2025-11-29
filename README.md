@@ -50,7 +50,7 @@ docker run -p 8000:8000 research-agent-system
 # Or use Docker Compose for full stack
 docker-compose up --build
 ```
-## 📡 API Endpoints
+##  API Endpoints
 | Endpoint | Method | Description |
 |----------|--------|-------------|
 | `/` | GET | System information and available endpoints |
