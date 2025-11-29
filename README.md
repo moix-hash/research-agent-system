@@ -24,7 +24,7 @@ User Request → Coordinator Agent → Research Agent → Writing Agent → Anal
 ### Local Development
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/research-agent-system.git
+git clone https://github.com/moix-hash/research-agent-system.git 
 cd research-agent-system
 
 # Install dependencies
@@ -51,15 +51,16 @@ docker run -p 8000:8000 research-agent-system
 docker-compose up --build
 ```
 ## 📡 API Endpoints
-Endpoint	Method	Description
-/	GET	System information and available endpoints
-/research	POST	Create new research task
-/tasks/{id}	GET	Get specific task status and results
-/tasks	GET	List all tasks
-/status	GET	System status and metrics
-/health	GET	Health check for all components
-/metrics	GET	Prometheus metrics
-/docs	GET	Interactive API documentation
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/` | GET | System information and available endpoints |
+| `/research` | POST | Create new research task |
+| `/tasks/{id}` | GET | Get specific task status and results |
+| `/tasks` | GET | List all tasks |
+| `/status` | GET | System status and metrics |
+| `/health` | GET | Health check for all components |
+| `/metrics` | GET | Prometheus metrics |
+| `/docs` | GET | Interactive API documentation |
 ### Example Usage
 
 **Windows PowerShell:**
