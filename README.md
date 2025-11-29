@@ -60,13 +60,21 @@ Endpoint	Method	Description
 /health	GET	Health check for all components
 /metrics	GET	Prometheus metrics
 /docs	GET	Interactive API documentation
-Example Usage
-```bash
+### Example Usage
 
+**Windows PowerShell:**
+```bash
 # Create research task
-curl -X POST "http://localhost:8000/research" \
-  -H "Content-Type: application/json" \
-  -d '{"topic": "Artificial Intelligence in Healthcare", "content_type": "article", "tone": "professional"}'
+Invoke-RestMethod -Uri "http://localhost:8000/research" -Method Post -ContentType "application/json" -Body '{"topic": "Artificial Intelligence in Healthcare", "content_type": "article", "tone": "professional"}'
+
+# Check task status (replace with actual task_id)
+Invoke-RestMethod -Uri "http://localhost:8000/tasks/YOUR_TASK_ID" -Method Get
+
+# List all tasks
+Invoke-RestMethod -Uri "http://localhost:8000/tasks" -Method Get
+
+# Health check
+Invoke-RestMethod -Uri "http://localhost:8000/health" -Method Get
 ```
 ## 🔧 Features
 Core Capabilities
