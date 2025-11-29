@@ -13,15 +13,15 @@ BASE_URL = "http://localhost:8000"
 
 def print_success(message):
     """Print success message"""
-    print(f"✅ {message}")
+    print(f" {message}")
 
 def print_error(message):
     """Print error message"""
-    print(f"❌ {message}")
+    print(f" {message}")
 
 def print_info(message):
     """Print info message"""
-    print(f"ℹ️  {message}")
+    print(f"  {message}")
 
 def test_health():
     """Test health endpoint"""
@@ -120,7 +120,7 @@ def test_list_tasks():
             data = response.json()
             print_success(f"Task List: {data['total_tasks']} total tasks")
             
-            for task in data['tasks'][:3]:  # Show first 3 tasks
+            for task in data['tasks'][:3]:  
                 print(f"   - {task['task_id']}: {task['topic']} ({task['status']})")
             
             return True
@@ -184,7 +184,7 @@ def test_session_stats():
 
 def main():
     """Main test function"""
-    print("🧪 Research Agent System - API Test Suite")
+    print(" Research Agent System - API Test Suite")
     print("=" * 50)
     
     # Check if server is running
@@ -256,15 +256,16 @@ def main():
     
     print()
     print("=" * 50)
-    print(f"📊 Test Results: {tests_passed} passed, {tests_failed} failed")
+    print(f"Test Results: {tests_passed} passed, {tests_failed} failed")
     
     if tests_failed == 0:
-        print_success("All tests passed! 🎉")
-        print("\n🚀 System is ready for use!")
+        print_success("All tests passed!")
+        print("\n System is ready for use!")
         print("   Visit http://localhost:8000/docs for interactive API documentation")
     else:
         print_error("Some tests failed. Please check the server logs.")
         sys.exit(1)
 
 if __name__ == "__main__":
+
     main()
