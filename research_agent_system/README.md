@@ -2,7 +2,7 @@
 
 A comprehensive multi-agent AI system for automated research and content creation, built for the Google AI Agents Intensive Course Capstone Project.
 
-## 🚀 Features
+##  Features
 
 - **Multi-Agent Architecture**: Research, Writing, Analysis, and Coordinator agents working together
 - **Automated Research**: Comprehensive topic research with web search integration
@@ -14,40 +14,39 @@ A comprehensive multi-agent AI system for automated research and content creatio
 - **RESTful API**: Complete API with interactive documentation
 - **Docker Support**: Containerized deployment with full stack
 
-## 🏗️ Architecture
+##  Architecture
 Research Agent System/
-├── 🤖 Agents/
+├──  Agents/
 │ ├── Research Agent - Conducts topic research
 │ ├── Writing Agent - Generates content
 │ ├── Analysis Agent - Analyzes content quality
 │ └── Coordinator Agent - Manages workflow
-├── 🛠️ Tools/
+├──  Tools/
 │ ├── Web Search - Information gathering
 │ ├── Code Execution - Python code validation
 │ ├── File Operations - Data persistence
 │ └── Custom Tools - Analysis and optimization
-├── 🧠 Memory/
+├──  Memory/
 │ ├── Memory Bank - Long-term storage
 │ └── Session Manager - State management
-├── 📊 Observability/
+├──  Observability/
 │ ├── Structured Logging
 │ ├── Distributed Tracing
 │ └── Metrics Collection
-└── 🌐 API/
+└──  API/
 └── RESTful endpoints with full documentation
 
-
-## 🛠️ Installation
+##  Installation
 
 ### Prerequisites
 
 - Python 3.11+
 - Redis (optional, for production)
-- MongoDB (optional, for production)
 
 ### Quick Start
 
 1. **Clone and setup**:
 ```bash
 git clone <repository>
+
 cd research_agent_system
