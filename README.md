@@ -39,3 +39,70 @@ python src/main.py
 
 # Access the API documentation
 # http://localhost:8000/docs
+```
+### Docker Deployment
+```bash
+
+# Build and run with Docker
+docker build -t research-agent-system .
+docker run -p 8000:8000 research-agent-system
+
+# Or use Docker Compose for full stack
+docker-compose up --build
+```
+## 📡 API Endpoints
+Endpoint	Method	Description
+/	GET	System information and available endpoints
+/research	POST	Create new research task
+/tasks/{id}	GET	Get specific task status and results
+/tasks	GET	List all tasks
+/status	GET	System status and metrics
+/health	GET	Health check for all components
+/metrics	GET	Prometheus metrics
+/docs	GET	Interactive API documentation
+Example Usage
+```bash
+
+# Create research task
+curl -X POST "http://localhost:8000/research" \
+  -H "Content-Type: application/json" \
+  -d '{"topic": "Artificial Intelligence in Healthcare", "content_type": "article", "tone": "professional"}'
+```
+## 🔧 Features
+Core Capabilities
+
+    Automated Research: AI-powered topic research and analysis
+
+    Content Generation: Professional writing in various formats and tones
+
+    Quality Assessment: Automated content evaluation and improvement suggestions
+
+    Multi-format Support: Articles, reports, blog posts, and more
+
+### Technical Features
+
+    RESTful API: Comprehensive API with OpenAPI documentation
+
+    Real-time Processing: Background task processing with status tracking
+
+    Error Handling: Graceful fallbacks when external services are unavailable
+
+    Observability: Structured logging, metrics, and distributed tracing
+
+    Containerization: Docker support for production deployment
+
+## 🧪 Testing
+```bash
+
+# Run comprehensive API tests
+python test_api.py
+
+# Run unit tests
+pytest tests/ -v
+
+# Run with coverage
+pytest tests/ --cov=src --cov-report=html
+
+# Quick validation
+python quick_test.py
+```
