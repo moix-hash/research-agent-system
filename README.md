@@ -1,12 +1,12 @@
-# Research Agent System 🤖
+# Research Agent System 
 
 A multi-agent AI system for automated research and content creation, built for the Google AI Agents Intensive Course Capstone Project.
 
-## 🎯 Overview
+##  Overview
 
 This system demonstrates a complete multi-agent architecture where specialized AI agents collaborate to automate research, content generation, and quality analysis. The system coordinates Research, Writing, Analysis, and Coordinator agents to transform research topics into comprehensive content packages.
 
-## 🏗️ Architecture
+##  Architecture
 User Request → Coordinator Agent → Research Agent → Writing Agent → Analysis Agent → Final Result
 
 ### Agent Responsibilities:
@@ -15,7 +15,7 @@ User Request → Coordinator Agent → Research Agent → Writing Agent → Anal
 - **Analysis Agent**: Evaluates content quality, sentiment, and readability
 - **Coordinator Agent**: Manages workflow and communication between all agents
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -77,7 +77,7 @@ Invoke-RestMethod -Uri "http://localhost:8000/tasks" -Method Get
 # Health check
 Invoke-RestMethod -Uri "http://localhost:8000/health" -Method Get
 ```
-## 🔧 Features
+##  Features
 Core Capabilities
 
     Automated Research: AI-powered topic research and analysis
@@ -100,7 +100,7 @@ Core Capabilities
 
     Containerization: Docker support for production deployment
 
-## 🧪 Testing
+##  Testing
 ```bash
 
 # Run comprehensive API tests
